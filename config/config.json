@@ -3,7 +3,7 @@
     "username": "root",
     "password": "sop1234",
     "database": "everydays",
-    "host": "127.0.0.1",
+    "host": "192.168.0.21",
     "dialect": "mysql"
   },
   "test": {
