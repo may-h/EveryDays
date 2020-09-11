@@ -1,26 +1,24 @@
 module.exports = (sequelize, { DataTypes, UUIDV4 }) => {
-  //모델이름은 단수형, 테이블 이름은 복수형
   return sequelize.define(
-    "admin",
+    "company",
     {
-      admin_no: {
-        type: DataTypes.INTEGER,
+      company_code: {
+        type: DataTypes.UUID,
+        defaultValue: UUIDV4,
         allowNull: false,
         unique: true,
-        autoIncrement: true,
         primaryKey: true,
       },
-      admin_id: {
+      company_name: {
         type: DataTypes.STRING(20),
         allowNull: false,
-        unique: true,
       },
-      email: {
-        type: DataTypes.STRING(40),
-        allowNull: false,
-      },
-      password: {
+      logo_file_path: {
         type: DataTypes.TEXT,
+        allowNull: true,
+      },
+      admin_no: {
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
     },

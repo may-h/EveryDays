@@ -1,11 +1,13 @@
 module.exports = (sequelize, { DataTypes }) => {
   return sequelize.define(
-    "user",
+    "member",
     {
-      user_no: {
+      member_no: {
         type: DataTypes.INTEGER,
         allowNull: false,
         unique: true,
+        primaryKey: true,
+        autoIncrement: true,
       },
       name: {
         type: DataTypes.STRING(20),

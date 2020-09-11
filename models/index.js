@@ -15,8 +15,11 @@ const sequelize = new Sequelize(
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-db.User = require("./user")(sequelize, Sequelize);
+db.User = require("./member")(sequelize, Sequelize);
 db.Admin = require("./admin")(sequelize, Sequelize);
 db.Payment = require("./payment")(sequelize, Sequelize);
+db.Company = require("./company")(sequelize, Sequelize);
+db.Memo = require("./memo")(sequelize, Sequelize);
+db.Attendance = require("./attendance")(sequelize, Sequelize);
 
 module.exports = db;

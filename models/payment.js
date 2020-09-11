@@ -9,7 +9,7 @@ module.exports = (sequelize, { DataTypes }) => {
         autoIncrement: true,
         primaryKey: true,
       },
-      user_no: {
+      member_no: {
         type: DataTypes.STRING(20),
         allowNull: false,
       },

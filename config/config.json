@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "sop1234",
+    "password": "hmsk6534",
     "database": "everydays",
-    "host": "192.168.0.21",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "sop1234",
     "database": "everydays",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "sop1234",
     "database": "everydays",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "mysql"
   }
 }
