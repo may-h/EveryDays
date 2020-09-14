@@ -17,7 +17,7 @@ module.exports = (sequelize, { DataTypes, UUIDV4 }) => {
         type: DataTypes.TEXT,
         allowNull: true,
       },
-      admin_no: {
+      user_no: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },

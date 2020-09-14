@@ -16,6 +16,7 @@ module.exports = (sequelize, { DataTypes }) => {
       checkin_time: {
         type: DataTypes.DATE,
         allowNull: false,
+        defaultValue: DataTypes.NOW,
       },
     },
     {
